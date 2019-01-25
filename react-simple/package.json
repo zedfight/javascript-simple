@@ -1,0 +1,32 @@
+{
+  "name": "react-simple",
+  "version": "1.0.0",
+  "description": "demo for react",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react, redux, webapck"
+  ],
+  "author": "vocoWone",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "7.1.4",
+    "babel-preset-react": "7.0.0-beta.3",
+    "html-webpack-plugin": "3.2.0",
+    "prettier": "1.14.3",
+    "webpack": "4.16.5",
+    "webpack-dev-server": "3.1.5"
+  },
+  "dependencies": {
+    "react": "16.6.0",
+    "react-dom": "16.6.0",
+    "react-redux": "5.1.0",
+    "react-router-dom": "4.3.1",
+    "redux": "4.0.1"
+  }
+}

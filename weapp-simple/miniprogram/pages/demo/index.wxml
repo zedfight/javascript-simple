@@ -1,0 +1,33 @@
+<!-- text -->
+<text data-name="{{name}}" style="font-size: 48rpx; color:{{fontColor}}">{{name}},{{isFirst?"no 1":"no"}}, {{num1+num2}}</text>
+
+<!-- if-else -->
+<view wx:if="{{length > 5}}"> 大于5 </view>
+<view wx:elif="{{length ===5}}"> 等于5 </view>
+<view wx:else> 小于5 </view>
+
+<!-- for -->
+<view wx:for="{{array}}" >
+  {{index}}:{{item.message}}
+</view>
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+  {{idx}}: {{itemName.message}}
+</view>
+<block wx:for="{{[1, 2, 3]}}">
+  <view> {{index}}:{{item}} </view>
+</block>
+
+<!-- wx:key -->
+<switch wx:for="{{objectArray}}" wx:key="unique" > {{item.id}} </switch>
+<button bindtap="switch" class="weui-btn weui-btn_primary"> Switch </button>
+<button bindtap="addToFront"> Add to the front </button>
+
+<!-- template -->
+<!-- 只会 import 目标文件中定义的 template，而不会 import 目标文件中 import 的 template -->
+<import src="./template.wxml" />
+<template is="myTemplate" data="{{...myTemplate}}"/>
+<!-- include 可以将目标文件中除了 <template/> <wxs/> 外的整个代码引入，相当于是拷贝到 include 位置 -->
+<include src="./header.wxml"/>
+<body>body</body>
+<include src="./footer.wxml" />
+
