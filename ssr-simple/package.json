@@ -1,0 +1,39 @@
+{
+  "name": "ssr-simple",
+  "version": "1.0.0",
+  "description": "Demo for Server Side Render",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "author": "vocoWone",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "10.12.18",
+    "@types/react": "16.7.21",
+    "@types/react-dom": "16.0.11",
+    "@types/react-redux": "7.0.1",
+    "@types/react-router-dom": "4.3.1",
+    "axios": "^0.18.0",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
+    "react-redux": "6.0.0",
+    "react-router-dom": "4.3.1",
+    "redux": "4.0.1"
+  },
+  "devDependencies": {
+    "@types/webpack": "^4.4.24",
+    "chalk": "2.4.2",
+    "html-webpack-plugin": "3.2.0",
+    "prettier": "1.16.1",
+    "ts-loader": "5.3.3",
+    "typescript": "3.3.0-dev.20181211",
+    "webpack": "4.29.0",
+    "webpack-dev-server": "3.1.14"
+  }
+}
