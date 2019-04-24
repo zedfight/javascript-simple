@@ -1,2 +1,2 @@
-# frontend-simple
-Demo for frontend.
+# javascript-simple
+Demo for JavaScript.
